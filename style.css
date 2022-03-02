@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+*{
+	margin: 0;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+div {
+	width: 200px;
+	height: 200px;
+	background-color: lightslategrey;
+	margin: 10px auto;
+	transition: 0.5s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Shizuru', cursive;
+	font-size: 29px;
+
+}
+div:hover{
+	border-radius: 25px;
+	font-size: 39px;
+	color: whitesmoke;
+	cursor: pointer;
+}
+.box:hover {
+	box-shadow: 0 0 20px hotpink;
+	background-color: seagreen;
+	transform: rotate(360deg);
+}
+.box2:hover {
+	box-shadow: 0 0 20px seagreen;
+	background-color: hotpink;
+	animation: telepation 0.2s infinite;
+}
+.dollar{
+	width: 100px;
+	height: 100px;
+	background-image: url(dollar.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	/*animation: dollardibills 5s linear;
+	animation-iteration-count: 1;*/
+}
+@keyframes telepation {
+	0%{
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-30px);
+	}
+	66%{
+		transform: translateX(30px); 
+	}
+	99%{
+		transform: translateX(0);
+	
+	}
+
+}
+/*@keyframes dollardibills {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(2000px);
+	}
+}*/
+
+
